@@ -37,6 +37,6 @@ test('test base case problem 3', () => {
     expect(execute(13195)).toBe(29);
 });
 
-test('test use case problem 2', () => {
+test('test use case problem 3', () => {
     expect(execute(600851475143)).toBe(6857);
 });
