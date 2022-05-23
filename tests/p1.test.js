@@ -22,9 +22,5 @@ test('test base case problem 1', () => {
 });
 
 test('test use case problem 1', () => {
-    try {
-        expect(execute(1000)).toBe(23);
-    } catch (e) {
-        console.log(execute(1000))
-    }
+    expect(execute(1000)).toBe(233168);
 });
