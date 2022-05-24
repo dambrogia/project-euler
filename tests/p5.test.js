@@ -6,13 +6,25 @@ What is the smallest positive number that is evenly divisible by all of the numb
  * @returns Number
  */
 const execute = n => {
+    var curr = n;
 
+    while (true) {
+        for (var i = n - 1; i > 0; i--) {
+            if (curr % i !== 0) {
+                break;
+            } else if (i === 1) {
+                return curr;
+            }
+        }
+
+        curr = curr + n;
+    }
 };
 
 test('test base case problem 5', () => {
-    expect(10).toBe(2520);
+    expect(execute(10)).toBe(2520);
 });
 
 test('test use case problem 5', () => {
-    expect(true).toBe(false);
+    expect(execute(20)).toBe(232792560);
 });
